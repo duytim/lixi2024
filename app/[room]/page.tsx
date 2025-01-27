@@ -12,7 +12,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { getItem } from "@/lib/localStorage.helper";
 import { ScratchToReveal } from "@/components/ui/scratch-to-reveal";
 import Image from 'next/image';
-import { formatCurrency } from "@/lib/price.helper";
+//import { formatCurrency } from "@/lib/price.helper";
 
 export default function PageRandom({
     params,
@@ -188,7 +188,7 @@ export default function PageRandom({
                             <ScratchToReveal height={400} width={300} onComplete={handleCompleted} gradientColors={['#F93827', '#FF9D23', '#F93827']} minScratchPercentage={90} className="flex flex-col items-center justify-center overflow-hidden">
                                 {iconsQr}
                                 <Image src={imgQr} alt="qr" width={200} height={300} className="z-[999]" />
- 
+                                
                             </ScratchToReveal>
                         </motion.div>
                     )}
