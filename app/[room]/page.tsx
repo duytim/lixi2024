@@ -96,7 +96,7 @@ export default function PageRandom({
             return;
         }
         setMoney(data.money);
-        setImgQr(`https://qr.sepay.vn/img?bank=${code}&acc=${accountNumber}&template=qronly&amount=${data.money}&des=CHUC MUNG NAM MOI 2025`);
+        setImgQr(`https://qr.sepay.vn/img?bank=${code}&acc=${accountNumber}&template=qronly&amount=${data.money}&des=Duy Nguyen - Li Xi - Chuc Mung Nam Moi 2025`);
 
     }, [toast, params]);
 
@@ -188,7 +188,7 @@ export default function PageRandom({
                             <ScratchToReveal height={400} width={300} onComplete={handleCompleted} gradientColors={['#F93827', '#FF9D23', '#F93827']} minScratchPercentage={90} className="flex flex-col items-center justify-center overflow-hidden">
                                 {iconsQr}
                                 <Image src={imgQr} alt="qr" width={200} height={300} className="z-[999]" />
-                                <p className="text-2xl font-bold text-red-500 font-pacifico mt-2">{formatCurrency(money)}</p>
+ 
                             </ScratchToReveal>
                         </motion.div>
                     )}
