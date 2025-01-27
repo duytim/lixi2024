@@ -25,7 +25,7 @@ const texts = [
 
 export default function Home() {
     const [icons, setIcons] = useState<React.ReactElement[]>([]);
-    const [amountRange, setAmountRange] = useState([10000, 500000]);
+    const [amountRange, setAmountRange] = useState([10000, 200000]);
     const { push } = useRouter();
 
     useEffect(() => {
@@ -83,7 +83,7 @@ export default function Home() {
                     />
                     <Slider
                         min={10000}
-                        max={500000}
+                        max={200000}
                         step={10000}
                         value={amountRange}
                         name="amount"
